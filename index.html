@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiya Tales — Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3ECD9;
+    --paper-deep: #ECE2C6;
+    --ink: #24321F;
+    --ink-soft: #4C5A44;
+    --brass: #A9762F;
+    --brass-deep: #8A5E22;
+    --maroon: #7A2430;
+    --line: #C9B98C;
+    --card: #FBF7EA;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin:0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Ridge divider ---------- */
+  .ridge{
+    width:100%;
+    height: 22px;
+    display:block;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position: relative;
+    padding: 64px 24px 48px;
+    text-align:center;
+    background:
+      radial-gradient(120% 100% at 50% -20%, rgba(169,118,47,0.16), transparent 60%),
+      var(--paper);
+    overflow:hidden;
+  }
+  .hero .eyebrow{
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--brass-deep);
+    font-weight:600;
+    margin-bottom: 14px;
+  }
+  .hero h1{
+    font-family:'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: clamp(40px, 10vw, 68px);
+    line-height: 1.02;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .hero .sub{
+    font-size: 15px;
+    color: var(--ink-soft);
+    max-width: 420px;
+    margin: 0 auto;
+    line-height:1.55;
+  }
+  .hero .loc{
+    margin-top: 22px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* mountain ridge svg under hero */
+  .hero-ridge{
+    display:block;
+    width:100%;
+    height:34px;
+    margin-top: 36px;
+  }
+
+  /* ---------- Sticky trail nav ---------- */
+  nav.trail{
+    position: sticky;
+    top:0;
+    z-index: 50;
+    background: rgba(243,236,217,0.96);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  nav.trail::-webkit-scrollbar{ display:none; }
+  nav.trail a{
+    display:inline-block;
+    font-family:'Work Sans', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration:none;
+    padding: 7px 13px;
+    margin-right: 6px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--card);
+    transition: all .18s ease;
+  }
+  nav.trail a.active,
+  nav.trail a:hover{
+    background: var(--maroon);
+    border-color: var(--maroon);
+    color: var(--paper);
+  }
+
+  /* ---------- Sections ---------- */
+  main{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 8px 20px 40px;
+  }
+
+  section.category{
+    padding-top: 46px;
+    scroll-margin-top: 58px;
+  }
+
+  .cat-head{
+    display:flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .cat-num{
+    font-family:'Fraunces', serif;
+    font-size: 14px;
+    color: var(--brass-deep);
+    font-weight:600;
+  }
+  .cat-head h2{
+    font-family:'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(26px, 6vw, 32px);
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .cat-note{
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+    font-style: italic;
+  }
+
+  ul.items{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.items li{
+    display:flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 11px 0;
+    border-bottom: 1px dotted var(--line);
+  }
+  ul.items li:last-child{ border-bottom:none; }
+
+  .item-name{
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .item-name small{
+    display:block;
+    font-size: 11.5px;
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 2px;
+  }
+  .leader{
+    flex: 1;
+    border-bottom: 1px dotted var(--line);
+    transform: translateY(-4px);
+    min-width: 12px;
+  }
+  .price{
+    font-family:'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--maroon);
+    white-space: nowrap;
+  }
+  .price::before{
+    content: "Rs. ";
+    font-family:'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--brass-deep);
+  }
+
+  /* ---------- Multi-column price table (Momo, Beer, Hard Drinks) ---------- */
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 4px;
+  }
+  table.price-table{
+    width:100%;
+    min-width: 320px;
+    border-collapse: collapse;
+  }
+  table.price-table th{
+    font-family:'Work Sans', sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--brass-deep);
+    text-align: right;
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  table.price-table th:first-child{
+    text-align:left;
+    padding-left:0;
+  }
+  table.price-table td{
+    padding: 11px 0 11px 10px;
+    border-bottom: 1px dotted var(--line);
+    font-size: 14.5px;
+    text-align: right;
+    white-space: nowrap;
+  }
+  table.price-table tr:last-child td{ border-bottom:none; }
+  table.price-table td:first-child{
+    text-align:left;
+    padding-left:0;
+    font-weight:500;
+    color: var(--ink);
+    white-space: normal;
+  }
+  table.price-table td.price-cell{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    color: var(--maroon);
+  }
+  table.price-table td.price-cell::before{
+    content: "Rs. ";
+    font-family:'Work Sans', sans-serif;
+    font-weight:600;
+    font-size: 10.5px;
+    color: var(--brass-deep);
+  }
+  section#beer td.price-cell::before,
+  section#hard-drinks td.price-cell::before{ color: var(--maroon); }
+
+  /* Hard drinks card treatment */
+  section#hard-drinks{
+    background: var(--paper-deep);
+    margin: 46px -20px 0;
+    padding: 46px 20px 40px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ---------- Menu Section Images ---------- */
+  .menu-image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    background-color: var(--card);
+    border-radius: 6px;
+    margin: 12px 0 16px 0;
+    border: 1px solid var(--line);
+    display: block;
+  }
+
+  /* Mobile & Tablet Responsive Enhancements */
+  @media (max-width: 600px) {
+    .hero {
+      padding: 40px 16px 32px;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 9vw, 48px);
+    }
+    .hero .sub {
+      font-size: 14px;
+    }
+    main {
+      padding: 4px 14px 30px;
+    }
+    section.category {
+      padding-top: 36px;
+      scroll-margin-top: 52px;
+    }
+    .cat-head h2 {
+      font-size: 24px;
+    }
+    .item-name {
+      font-size: 14.5px;
+    }
+    .price {
+      font-size: 14.5px;
+    }
+    .menu-image {
+      max-height: 220px;
+    }
+    nav.trail a {
+      font-size: 11.5px;
+      padding: 6px 11px;
+    }
+  }
+
+  footer{
+    text-align:center;
+    padding: 34px 20px 50px;
+    color: var(--ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+  footer .name{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    color: var(--ink);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  footer .admin-link {
+    margin-top: 14px;
+    display: inline-block;
+    color: var(--brass-deep);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  footer .admin-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow" id="heroEyebrow">Est. in Kathmandu</div>
+  <h1 id="heroTitle">Chiya Tales</h1>
+  <p class="sub" id="heroSub">Specialty teas, fresh coffee, momos, pakaudas, bakery delights &amp; cold drinks — everything on one card.</p>
+  <div class="loc" id="heroLoc">Full Menu &amp; Price List</div>
+  <svg class="hero-ridge" viewBox="0 0 640 34" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <polyline points="0,34 60,10 120,26 180,4 240,22 300,8 360,28 420,12 480,24 540,6 600,20 640,14"
+      fill="none" stroke="#A9762F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="0.55"/>
+  </svg>
+</header>
+
+<nav class="trail" id="trailNav">
+  <!-- Dynamic Category Trail Nav Buttons -->
+</nav>
+
+<main id="mainMenu">
+  <!-- Dynamic Menu Sections Rendered Here -->
+</main>
+
+<footer>
+  <div class="name" id="footerName">Chiya Tales</div>
+  Prices in Nepali Rupees &middot; Subject to change without notice
+  <div>
+    <a href="/admin.html" class="admin-link">Admin Panel</a>
+  </div>
+</footer>
+
+<script>
+let observer = null;
+
+async function loadMenu() {
+  try {
+    const res = await fetch('/api/menu');
+    let payload = [];
+    if (res.ok) {
+      payload = await res.json();
+    } else {
+      console.warn('API fetch failed, falling back to static menu data.');
+      return;
+    }
+    renderMenu(payload);
+  } catch (e) {
+    console.error('Error fetching dynamic menu:', e);
+  }
+}
+
+function renderMenu(payload) {
+  let categories = [];
+  let header = null;
+
+  if (payload && payload.categories) {
+    categories = payload.categories;
+    header = payload.header;
+  } else if (Array.isArray(payload)) {
+    categories = payload;
+  }
+
+  if (header) {
+    if (header.eyebrow) document.getElementById('heroEyebrow').innerText = header.eyebrow;
+    if (header.title) {
+      document.getElementById('heroTitle').innerText = header.title;
+      document.title = `${header.title} — Menu`;
+      const footerName = document.getElementById('footerName');
+      if (footerName) footerName.innerText = header.title;
+    }
+    if (header.sub) document.getElementById('heroSub').innerText = header.sub;
+    if (header.loc) document.getElementById('heroLoc').innerText = header.loc;
+  }
+
+  const nav = document.getElementById('trailNav');
+  const main = document.getElementById('mainMenu');
+
+  // Render Nav Links
+  nav.innerHTML = categories.map(cat => `
+    <a href="#${cat.id}">${escapeHtml(cat.title)}</a>
+  `).join('');
+
+  // Render Main Sections
+  main.innerHTML = categories.map(cat => {
+    let contentHtml = '';
+    const type = cat.type || 'list';
+
+    if (type === 'list') {
+      contentHtml = `
+        <ul class="items">
+          ${(cat.items || []).map(item => `
+            <li>
+              <span class="item-name">${escapeHtml(item.name)}${item.subtext ? `<small>${escapeHtml(item.subtext)}</small>` : ''}</span>
+              <span class="leader"></span>
+              <span class="price">${escapeHtml(item.price)}</span>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+    } else if (type === 'specials_table') {
+      contentHtml = `
+        <div class="table-responsive">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>ITEM</th>
+                <th>FULL</th>
+                <th>HALF</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${(cat.items || []).map(item => `
+                <tr>
+                  <td>${escapeHtml(item.name)}</td>
+                  <td class="price-cell">${escapeHtml(item.priceFull)}</td>
+                  <td>${item.priceHalf.toLowerCase().includes('plate') ? escapeHtml(item.priceHalf) : `<span class="price-cell">${escapeHtml(item.priceHalf)}</span>`}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else if (type === 'momo_table') {
+      contentHtml = `
+        <div class="table-responsive">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>MOMO</th>
+                <th>STEAM</th>
+                <th>FRIED</th>
+                <th>KOTHEY</th>
+                <th>C-MOMO</th>
+                <th>JHOL</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${(cat.items || []).map(item => `
+                <tr>
+                  <td>${escapeHtml(item.name)}</td>
+                  <td class="price-cell">${escapeHtml(item.steam || '-')}</td>
+                  <td class="price-cell">${escapeHtml(item.fried || '-')}</td>
+                  <td class="price-cell">${escapeHtml(item.kothey || '-')}</td>
+                  <td class="price-cell">${escapeHtml(item.cmomo || '-')}</td>
+                  <td class="price-cell">${escapeHtml(item.jhol || '-')}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else if (type === 'hard_drinks_table') {
+      contentHtml = `
+        <div class="table-responsive">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Full Bottle</th>
+                <th>Quarter / Glass</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${(cat.items || []).map(item => `
+                <tr>
+                  <td>${escapeHtml(item.name)}</td>
+                  <td class="price-cell">${escapeHtml(item.full || '-')}</td>
+                  <td class="price-cell">${escapeHtml(item.quarter || '-')}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else if (type === 'beer_table') {
+      contentHtml = `
+        <div class="table-responsive">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Beer</th>
+                <th>Bottle</th>
+                <th>Can</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${(cat.items || []).map(item => `
+                <tr>
+                  <td>${escapeHtml(item.name)}</td>
+                  <td class="price-cell">${escapeHtml(item.bottle || '-')}</td>
+                  <td class="price-cell">${escapeHtml(item.can || '-')}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    return `
+      <section class="category" id="${cat.id}">
+        <div class="cat-head">
+          ${cat.number ? `<span class="cat-num">${escapeHtml(cat.number)}</span>` : ''}
+          <h2>${escapeHtml(cat.title)}</h2>
+        </div>
+        ${cat.note ? `<p class="cat-note">${escapeHtml(cat.note)}</p>` : ''}
+        ${cat.image ? `<img src="${escapeHtml(cat.image)}" alt="${escapeHtml(cat.title)}" class="menu-image">` : ''}
+        ${contentHtml}
+      </section>
+    `;
+  }).join('');
+
+  setupScrollTracking();
+}
+
+function setupScrollTracking() {
+  const links = Array.from(document.querySelectorAll('nav.trail a'));
+  const sections = links.map(a => document.querySelector(a.getAttribute('href')));
+  const nav = document.getElementById('trailNav');
+
+  if (observer) observer.disconnect();
+
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = '#' + entry.target.id;
+      const link = links.find(a => a.getAttribute('href') === id);
+      if (!link) return;
+      if (entry.isIntersecting){
+        links.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        const navRect = nav.getBoundingClientRect();
+        const linkRect = link.getBoundingClientRect();
+        nav.scrollLeft += (linkRect.left - navRect.left) - 12;
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+  sections.forEach(s => s && observer.observe(s));
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+loadMenu();
+</script>
+
+</body>
+</html>

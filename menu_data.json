@@ -1,0 +1,387 @@
+{
+  "header": {
+    "eyebrow": "CHIYA TALE MENU",
+    "title": "Chiya Tale — Specialty Teas & Nepali Bites",
+    "sub": "Specialty teas, fresh coffee, pakaudas, momos, bakery delights & cold drinks.",
+    "loc": "Kathmandu, Nepal"
+  },
+  "categories": [
+    {
+      "number": "01",
+      "title": "CHIYA",
+      "type": "two_column",
+      "image": "/uploads/specials.jpg",
+      "items": [
+        {
+          "name": "Milk Chiya",
+          "price": "40",
+          "desc": "Classic milk tea"
+        },
+        {
+          "name": "Black Chiya",
+          "price": "35",
+          "desc": "Classic black tea"
+        },
+        {
+          "name": "Masala Chiya",
+          "price": "50",
+          "desc": "Aromatic spice infused tea"
+        },
+        {
+          "name": "Ginger Chiya",
+          "price": "50",
+          "desc": "Fresh ginger tea"
+        },
+        {
+          "name": "Cardamom Chiya",
+          "price": "60",
+          "desc": "Cardamom (Sukmel) tea"
+        },
+        {
+          "name": "Honey Lemon Chiya",
+          "price": "70",
+          "desc": "Specialty tea"
+        },
+        {
+          "name": "Kesar Chiya",
+          "price": "80",
+          "desc": "Saffron infused tea"
+        },
+        {
+          "name": "Cinnamon Chiya",
+          "price": "60",
+          "desc": "Cinnamon spice tea"
+        },
+        {
+          "name": "Mint Chiya",
+          "price": "60",
+          "desc": "Fresh mint tea"
+        },
+        {
+          "name": "Tulsi Chiya",
+          "price": "60",
+          "desc": "Holy basil herbal tea"
+        },
+        {
+          "name": "Chocolate Chiya",
+          "price": "80",
+          "desc": "Rich chocolate tea"
+        },
+        {
+          "name": "Tibetan Butter Tea",
+          "price": "80",
+          "desc": "Traditional butter tea"
+        },
+        {
+          "name": "Iced Chiya",
+          "price": "90",
+          "desc": "Cold brewed tea"
+        },
+        {
+          "name": "Iced Masala Chiya",
+          "price": "100",
+          "desc": "Cold spiced tea"
+        },
+        {
+          "name": "Chiya Latte",
+          "price": "120",
+          "desc": "Creamy chai latte"
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "COFFEE",
+      "type": "two_column",
+      "image": "/uploads/chowmein.jpg",
+      "items": [
+        {
+          "name": "Black Coffee",
+          "price": "100"
+        },
+        {
+          "name": "Milk Coffee",
+          "price": "120"
+        },
+        {
+          "name": "Americano",
+          "price": "140"
+        },
+        {
+          "name": "Cappuccino",
+          "price": "160"
+        },
+        {
+          "name": "Café Latte",
+          "price": "170"
+        },
+        {
+          "name": "Mocha",
+          "price": "180"
+        },
+        {
+          "name": "Cold Coffee",
+          "price": "180"
+        },
+        {
+          "name": "Iced Latte",
+          "price": "190"
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "CHIYA SANGA KHANE",
+      "type": "list",
+      "image": "/uploads/khaja-set.jpg",
+      "items": [
+        {
+          "name": "Pakuda Chop",
+          "price": "70"
+        },
+        {
+          "name": "Aloo Chop",
+          "price": "60"
+        },
+        {
+          "name": "Onion Pakauda",
+          "price": "70"
+        },
+        {
+          "name": "Mix Pakauda",
+          "price": "90"
+        },
+        {
+          "name": "Paneer Pakauda",
+          "price": "120"
+        },
+        {
+          "name": "Chicken Pakauda",
+          "price": "140"
+        },
+        {
+          "name": "Samosa",
+          "price": "60"
+        },
+        {
+          "name": "Veg Spring Roll",
+          "price": "100"
+        },
+        {
+          "name": "French Fries",
+          "price": "100"
+        },
+        {
+          "name": "Masala Fries",
+          "price": "120"
+        },
+        {
+          "name": "Aloo Nimki",
+          "price": "70"
+        },
+        {
+          "name": "Chips",
+          "price": "60"
+        },
+        {
+          "name": "Peanut Sadeko",
+          "price": "90"
+        },
+        {
+          "name": "Wai Wai Sadeko",
+          "price": "100"
+        },
+        {
+          "name": "Chatpate",
+          "price": "90"
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "MOMO",
+      "type": "list",
+      "image": "/uploads/momo.jpg",
+      "items": [
+        {
+          "name": "Veg Momo (Steamed)",
+          "price": "100"
+        },
+        {
+          "name": "Chicken Momo (Steamed)",
+          "price": "120"
+        },
+        {
+          "name": "Buff Momo (Steamed)",
+          "price": "130"
+        },
+        {
+          "name": "Paneer Momo (Steamed)",
+          "price": "130"
+        },
+        {
+          "name": "Fried Momo",
+          "price": "130"
+        },
+        {
+          "name": "Chilli Momo",
+          "price": "150"
+        },
+        {
+          "name": "Sadeko Momo",
+          "price": "150"
+        },
+        {
+          "name": "Jhol Momo",
+          "price": "150"
+        },
+        {
+          "name": "C-Momo",
+          "price": "160"
+        },
+        {
+          "name": "Extra Chutney",
+          "price": "20",
+          "desc": "Add-on"
+        },
+        {
+          "name": "Extra Momo",
+          "price": "40",
+          "desc": "Add-on"
+        }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "QUICK BITES",
+      "type": "list",
+      "image": "/uploads/khana-set.jpg",
+      "items": [
+        {
+          "name": "Boiled Egg",
+          "price": "40"
+        },
+        {
+          "name": "Egg Fry",
+          "price": "80"
+        },
+        {
+          "name": "Masala Omelette",
+          "price": "100"
+        },
+        {
+          "name": "Cheese Omelette",
+          "price": "130"
+        },
+        {
+          "name": "Anda Keema",
+          "price": "150"
+        },
+        {
+          "name": "Egg Toast",
+          "price": "120"
+        },
+        {
+          "name": "Cheese Toast",
+          "price": "140"
+        },
+        {
+          "name": "Chicken Sandwich",
+          "price": "180"
+        },
+        {
+          "name": "Veg Sandwich",
+          "price": "150"
+        }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "BAKERY & LIGHT BITES",
+      "type": "list",
+      "image": "/uploads/specials.jpg",
+      "items": [
+        {
+          "name": "Cheese Croissant",
+          "price": "150"
+        },
+        {
+          "name": "Plain Croissant",
+          "price": "120"
+        },
+        {
+          "name": "Chocolate Croissant",
+          "price": "160"
+        },
+        {
+          "name": "Veg Puff",
+          "price": "100"
+        },
+        {
+          "name": "Chicken Puff",
+          "price": "140"
+        },
+        {
+          "name": "Chocolate Muffin",
+          "price": "120"
+        },
+        {
+          "name": "Banana Cake",
+          "price": "120"
+        },
+        {
+          "name": "Brownie",
+          "price": "140"
+        }
+      ]
+    },
+    {
+      "number": "07",
+      "title": "COLD DRINKS",
+      "type": "two_column",
+      "image": "/uploads/beer.jpg",
+      "items": [
+        {
+          "name": "Fresh Lemonade",
+          "price": "100"
+        },
+        {
+          "name": "Lemon Soda",
+          "price": "110"
+        },
+        {
+          "name": "Mint Lemonade",
+          "price": "130"
+        },
+        {
+          "name": "Iced Tea",
+          "price": "100"
+        },
+        {
+          "name": "Peach Iced Tea",
+          "price": "130"
+        },
+        {
+          "name": "Cold Coffee",
+          "price": "180"
+        },
+        {
+          "name": "Coke",
+          "price": "80"
+        },
+        {
+          "name": "Fanta",
+          "price": "80"
+        },
+        {
+          "name": "Sprite",
+          "price": "80"
+        },
+        {
+          "name": "Mineral Water",
+          "price": "30"
+        }
+      ]
+    }
+  ]
+}
