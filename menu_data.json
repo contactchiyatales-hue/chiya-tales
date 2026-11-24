@@ -1,99 +1,63 @@
 {
   "header": {
-    "eyebrow": "CHIYA TALE MENU",
-    "title": "Chiya Tale — Specialty Teas & Nepali Bites",
-    "sub": "Specialty teas, fresh coffee, pakaudas, momos, bakery delights & cold drinks.",
-    "loc": "Kathmandu, Nepal"
+    "loc": "Kathmandu, Nepal",
+    "sub": "Specialty teas, fresh coffee, momos, snacks & bakery delights — everything on one card.",
+    "title": "Chiya Tale",
+    "eyebrow": "Est. in Kathmandu"
   },
   "categories": [
     {
-      "number": "01",
-      "title": "CHIYA",
-      "type": "two_column",
-      "image": "/uploads/specials.jpg",
+      "type": "list",
+      "image": "/uploads/img_1790235790699_9utjf.jpg",
       "items": [
         {
-          "name": "Milk Chiya",
-          "price": "40",
-          "desc": "Classic milk tea"
-        },
-        {
-          "name": "Black Chiya",
-          "price": "35",
-          "desc": "Classic black tea"
-        },
-        {
           "name": "Masala Chiya",
-          "price": "50",
-          "desc": "Aromatic spice infused tea"
+          "price": "50"
         },
         {
           "name": "Ginger Chiya",
-          "price": "50",
-          "desc": "Fresh ginger tea"
+          "price": "50"
         },
         {
           "name": "Cardamom Chiya",
-          "price": "60",
-          "desc": "Cardamom (Sukmel) tea"
+          "price": "60"
         },
         {
           "name": "Honey Lemon Chiya",
-          "price": "70",
-          "desc": "Specialty tea"
-        },
-        {
-          "name": "Kesar Chiya",
-          "price": "80",
-          "desc": "Saffron infused tea"
+          "price": "70"
         },
         {
           "name": "Cinnamon Chiya",
-          "price": "60",
-          "desc": "Cinnamon spice tea"
+          "price": "60"
         },
         {
           "name": "Mint Chiya",
-          "price": "60",
-          "desc": "Fresh mint tea"
+          "price": "60"
         },
         {
           "name": "Tulsi Chiya",
-          "price": "60",
-          "desc": "Holy basil herbal tea"
+          "price": "60"
         },
         {
-          "name": "Chocolate Chiya",
-          "price": "80",
-          "desc": "Rich chocolate tea"
-        },
-        {
-          "name": "Tibetan Butter Tea",
-          "price": "80",
-          "desc": "Traditional butter tea"
-        },
-        {
-          "name": "Iced Chiya",
-          "price": "90",
-          "desc": "Cold brewed tea"
-        },
-        {
-          "name": "Iced Masala Chiya",
-          "price": "100",
-          "desc": "Cold spiced tea"
+          "name": "Kesar Chiya",
+          "price": "80"
         },
         {
           "name": "Chiya Latte",
-          "price": "120",
-          "desc": "Creamy chai latte"
+          "price": "120"
+        },
+        {
+          "name": "garin",
+          "price": "34",
+          "desc": ""
         }
-      ]
+      ],
+      "title": "Chiya",
+      "number": "01"
     },
     {
-      "number": "02",
-      "title": "COFFEE",
-      "type": "two_column",
-      "image": "/uploads/chowmein.jpg",
+      "type": "list",
+      "image": "/uploads/img_1790235050330_4j6bp.jpg",
       "items": [
         {
           "name": "Black Coffee",
@@ -127,13 +91,13 @@
           "name": "Iced Latte",
           "price": "190"
         }
-      ]
+      ],
+      "title": "Coffee",
+      "number": "02"
     },
     {
-      "number": "03",
-      "title": "CHIYA SANGA KHANE",
       "type": "list",
-      "image": "/uploads/khaja-set.jpg",
+      "image": "/uploads/img_1790235073364_8hd8m.jpg",
       "items": [
         {
           "name": "Pakuda Chop",
@@ -164,10 +128,6 @@
           "price": "60"
         },
         {
-          "name": "Veg Spring Roll",
-          "price": "100"
-        },
-        {
           "name": "French Fries",
           "price": "100"
         },
@@ -178,10 +138,6 @@
         {
           "name": "Aloo Nimki",
           "price": "70"
-        },
-        {
-          "name": "Chips",
-          "price": "60"
         },
         {
           "name": "Peanut Sadeko",
@@ -195,28 +151,28 @@
           "name": "Chatpate",
           "price": "90"
         }
-      ]
+      ],
+      "title": "Snacks",
+      "number": "03"
     },
     {
-      "number": "04",
-      "title": "MOMO",
       "type": "list",
       "image": "/uploads/momo.jpg",
       "items": [
         {
-          "name": "Veg Momo (Steamed)",
+          "name": "Veg Momo",
           "price": "100"
         },
         {
-          "name": "Chicken Momo (Steamed)",
+          "name": "Chicken Momo",
           "price": "120"
         },
         {
-          "name": "Buff Momo (Steamed)",
+          "name": "Buff Momo",
           "price": "130"
         },
         {
-          "name": "Paneer Momo (Steamed)",
+          "name": "Paneer Momo",
           "price": "130"
         },
         {
@@ -238,24 +194,14 @@
         {
           "name": "C-Momo",
           "price": "160"
-        },
-        {
-          "name": "Extra Chutney",
-          "price": "20",
-          "desc": "Add-on"
-        },
-        {
-          "name": "Extra Momo",
-          "price": "40",
-          "desc": "Add-on"
         }
-      ]
+      ],
+      "title": "Momo",
+      "number": "04"
     },
     {
-      "number": "05",
-      "title": "QUICK BITES",
       "type": "list",
-      "image": "/uploads/khana-set.jpg",
+      "image": "/uploads/img_1790235459117_2ecyu.jpg",
       "items": [
         {
           "name": "Boiled Egg",
@@ -286,28 +232,28 @@
           "price": "140"
         },
         {
-          "name": "Chicken Sandwich",
-          "price": "180"
-        },
-        {
           "name": "Veg Sandwich",
           "price": "150"
+        },
+        {
+          "name": "Chicken Sandwich",
+          "price": "180"
         }
-      ]
+      ],
+      "title": "Quick Bites",
+      "number": "05"
     },
     {
-      "number": "06",
-      "title": "BAKERY & LIGHT BITES",
       "type": "list",
-      "image": "/uploads/specials.jpg",
+      "image": "/uploads/img_1790235315446_nl7s2.jpg",
       "items": [
-        {
-          "name": "Cheese Croissant",
-          "price": "150"
-        },
         {
           "name": "Plain Croissant",
           "price": "120"
+        },
+        {
+          "name": "Cheese Croissant",
+          "price": "150"
         },
         {
           "name": "Chocolate Croissant",
@@ -333,13 +279,53 @@
           "name": "Brownie",
           "price": "140"
         }
-      ]
+      ],
+      "title": "Bakery",
+      "number": "06"
     },
     {
-      "number": "07",
-      "title": "COLD DRINKS",
-      "type": "two_column",
-      "image": "/uploads/beer.jpg",
+      "type": "list",
+      "image": "/uploads/img_1790235790699_9utjf.jpg",
+      "items": [
+        {
+          "name": "Chocolate Cake",
+          "price": "150"
+        },
+        {
+          "name": "Brownie",
+          "price": "140"
+        },
+        {
+          "name": "Chocolate Muffin",
+          "price": "120"
+        },
+        {
+          "name": "Ice Cream",
+          "price": "100"
+        },
+        {
+          "name": "Gulab Jamun",
+          "price": "100"
+        },
+        {
+          "name": "Sel Roti + Ice Cream",
+          "price": "150"
+        },
+        {
+          "name": "Sikarni",
+          "price": "130"
+        },
+        {
+          "name": "Juju Dhau",
+          "price": "120"
+        }
+      ],
+      "title": "Desserts",
+      "number": "07"
+    },
+    {
+      "type": "list",
+      "image": "/uploads/img_1790143157638_nlwdz.webp",
       "items": [
         {
           "name": "Fresh Lemonade",
@@ -381,7 +367,9 @@
           "name": "Mineral Water",
           "price": "30"
         }
-      ]
+      ],
+      "title": "Cold Drinks",
+      "number": "08"
     }
   ]
 }

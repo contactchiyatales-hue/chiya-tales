@@ -1,0 +1,224 @@
+/* Form related styles */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #8B2332;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-control {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper-input);
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  width: 100%;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--maroon);
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(122, 36, 48, 0.1);
+}
+
+/* Textarea */
+textarea.form-control {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Input types */
+input[type="email"].form-control,
+input[type="password"].form-control,
+input[type="text"].form-control,
+input[type="number"].form-control {
+  width: 100%;
+}
+
+/* Select */
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23222B1D' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 28px;
+}
+
+/* Buttons in forms */
+.form-group .btn {
+  align-self: flex-start;
+}
+
+/* Form sections */
+.form-section {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line-subtle);
+}
+
+.form-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Form row for side-by-side inputs */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Error states */
+.form-control.error {
+  border-color: var(--danger);
+  background-color: #FDF2F2;
+}
+
+.form-error {
+  color: var(--danger);
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Success states */
+.form-control.success {
+  border-color: var(--success);
+}
+
+.form-success {
+  color: var(--success);
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Help text */
+.form-help {
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+/* Disabled state */
+.form-control:disabled {
+  background-color: #F5F5F5;
+  color: var(--ink-muted);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Loading state for inputs */
+.form-control.loading {
+  background: linear-gradient(90deg, var(--paper-input) 25%, rgba(0, 0, 0, 0.05) 50%, var(--paper-input) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* File input styling */
+input[type="file"] {
+  display: none;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--paper-muted);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.15s ease;
+}
+
+.file-input-label:hover {
+  background: #E4DAC6;
+}
+
+/* Checkbox and radio custom styling */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Toggle switch */
+.toggle-switch {
+  display: inline-flex;
+  align-items: center;
+  background: #E4DAC6;
+  border-radius: 20px;
+  padding: 2px;
+  cursor: pointer;
+  width: 44px;
+  height: 24px;
+  transition: background 0.2s ease;
+}
+
+.toggle-switch.active {
+  background: var(--success);
+}
+
+.toggle-switch::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle-switch.active::after {
+  transform: translateX(20px);
+}
+
+@media (max-width: 480px) {
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-control {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

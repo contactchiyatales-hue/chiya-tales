@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Page Not Found — Chiya Tale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F7F4EE;
+      color: #0D3B34;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #ECE5DB;
+      border-radius: 24px;
+      padding: 40px 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .cup-icon {
+      margin: 0 auto 20px;
+      width: 100px;
+      height: 100px;
+      background: #F4EFE6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(139, 35, 50, 0.1);
+      color: #8B2332;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #8B2332;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #0D3B34;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #58746E;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: #8B2332;
+      color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(139, 35, 50, 0.2);
+    }
+    .btn-primary:hover {
+      background: #7A1F2C;
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: #F4EFE6;
+      color: #0D3B34;
+      border: 1px solid #E5DECE;
+    }
+    .btn-secondary:hover {
+      background: #EAE3D8;
+    }
+    .leaf-footer {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      opacity: 0.6;
+    }
+    .line {
+      width: 40px;
+      height: 1px;
+      background: #D5CEC2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="cup-icon">
+      <svg width="56" height="56" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M75 42C75 42 78 42 80 40C82 38 82 34 78 32C74 30 70 34 70 34" stroke="#8B2332" stroke-width="3" stroke-linecap="round"/>
+        <path d="M20 40H70V58C70 66 62 72 50 72C38 72 30 66 30 58V40" stroke="#8B2332" stroke-width="3" fill="none"/>
+        <path d="M15 78H75" stroke="#8B2332" stroke-width="3" stroke-linecap="round"/>
+        <path d="M35 30C35 25 40 22 40 18" stroke="#8B2332" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M45 32C45 27 50 24 50 20" stroke="#8B2332" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M55 30C55 25 60 22 60 18" stroke="#8B2332" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="badge">404 ERROR</div>
+    <h1>404</h1>
+    <h2>Oops! This Cup is Empty.</h2>
+    <p>The page or link you are looking for doesn't exist, was moved, or was finished over a warm cup of Chiya.</p>
+
+    <div class="btn-group">
+      <a href="/" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Back to Menu
+      </a>
+    </div>
+
+    <div class="leaf-footer">
+      <div class="line"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#58746E">
+        <path d="M17 8C12 8 8 12 8 17C13 17 17 13 17 8Z"/>
+      </svg>
+      <div class="line"></div>
+    </div>
+  </div>
+
+</body>
+</html>

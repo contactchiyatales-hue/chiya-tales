@@ -1,3 +1,16 @@
 node_modules/
+dist/
+.env.local
+.env.*.local
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/
+.cache//
 .vscode/
 *.log
+
+.vercel
